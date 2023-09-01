@@ -1,5 +1,3 @@
-# Projects Template
-
 # E-Taka Informational Website
 
 Welcome to the E-Taka Informational Website. This website provides users with essential information about our services, allowing them to make informed decisions about recycling their e-waste and purchasing high-quality refurbished electronics. Below, you'll find an overview of what you can do with this website.
