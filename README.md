@@ -40,14 +40,14 @@ Looking for affordable, reliable electronics? E-Taka offers a selection of refur
 - By purchasing refurbished electronics, you not only save money but also support the recycling and reusing of electronic devices, reducing e-waste.
 
 ## Getting Started
-**###Installation** 
+### Installation
 - Clone this repository: 
 ```sh
 git clone https://github.com/akirachix/LogicSpires-Informational.git
 ```
 - Navigate to the project directory
 ```sh
-cd LogicSpires-Informational directory
+cd LogicSpires-Informational
 ```
 - Run the application
 ```sh
