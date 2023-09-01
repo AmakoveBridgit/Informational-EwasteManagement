@@ -40,22 +40,21 @@ Looking for affordable, reliable electronics? E-Taka offers a selection of refur
 - By purchasing refurbished electronics, you not only save money but also support the recycling and reusing of electronic devices, reducing e-waste.
 
 ## Getting Started
-
-To get started with E-Taka's services, follow these simple steps:
-
-1. Explore our website to learn more about our mission and the services we offer.
-2. To access our services, access the services section to be able to dowload the E-Taka application.
-3. If you have e-waste to recycle, fill out the E-Waste Recycling Request form.
-4. If you're interested in purchasing refurbished electronics, browse our catalog.
-5. Contact our team if you have any questions or need assistance with any of our services.
+**###Installation** 
+- Clone this repository: 
+```sh
+git clone https://github.com/akirachix/LogicSpires-Informational.git
+```
+- Navigate to the project directory
+```sh
+cd LogicSpires-Informational directory
+```
+- Run the application
+```sh
+npm run start
+```
 
 ## Contact Us
 
-If you have any inquiries, concerns, or feedback, please don't hesitate to reach out to us. You can contact our customer support team via:
-
-- Email: [etaka@gmail.com]
-- Phone: +2547 0676 4545
-- Visit our [Contact Page](#) for more options.
-
-Thank you for choosing E-Taka. We look forward to helping you recycle your e-waste responsibly and providing you with top-notch refurbished electronics.
+If you have any inquiries, concerns, or feedback, please don't hesitate to reach out the development team
 
