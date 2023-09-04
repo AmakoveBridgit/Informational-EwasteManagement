@@ -2,7 +2,10 @@ name: React.js CI/CD Pipeline
 on:
   push:
     branches:
-      - dev
+      - dev 
+  pull_request:
+    branches:
+      - dev 
 jobs:
   build-test-deploy:
     runs-on: ubuntu 20.04
