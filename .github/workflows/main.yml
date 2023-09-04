@@ -18,8 +18,8 @@ jobs:
       with:
         node-version: '14'
     - name: Install Dependencies
-     working-directory: amanyi-informational
+     working-directory: LogicSpires-Informational
      run: npm install
     - name: Build
-     working-directory: amanyi-informational
+     working-directory: LogicSpires-Informational
      run: npm run build
