@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.section-container{
+    margin-top: 5%;
+}
+.service-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding:  0 10%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.title {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color:  #FF9800;
+}
+.mini-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    max-width: 600px;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+.service-text{
+    text-align: center;
+    max-width: 600px;
+    font-size: 26px;
+}
+.phone-image {
+    max-width: 800px;
+}
+
+
+@media (max-width: 768px) {
+    .centered-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
