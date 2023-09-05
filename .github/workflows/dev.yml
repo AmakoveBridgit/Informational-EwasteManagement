@@ -1,4 +1,4 @@
-name: React CI/CD
+name: React.js CI/CD
 on:
   push:
     branches:
@@ -6,13 +6,23 @@ on:
   pull_request:
     branches:
       - dev
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+    - name: Install Dependencies
+      working-directory: etaka
+      run: npm install
+    - name: Build
+      working-directory: etaka
+      run: npm run build
+    - name: Run Tests
+      working-directory: etaka
+      run: npm test
