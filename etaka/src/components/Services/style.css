@@ -52,6 +52,8 @@
 @media (max-width: 768px) {
     .centered-section {
         display: flex;
+        margin-right: 50%;
+        
         justify-content: center;
         align-items: center;
         height: 100vh;
