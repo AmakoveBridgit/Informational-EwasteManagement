@@ -1,4 +1,4 @@
-name: React App CI/CD
+name: React.js CI/CD
 on:
   push:
     branches:
@@ -6,24 +6,23 @@ on:
   pull_request:
     branches:
       - staging
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        
-        with:
-          node-version: '16' 
-      - name: Check for "build" script
-        run: |
-          if ! npm run -s build --if-present; then
-            echo "No 'build' script found in package.json or it failed to run."
-            exit 1  
-          fi
-      - name: Install Packages
-        run: npm install
-      - name: Run Tests
-        run: npm test
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+    - name: Install Dependencies
+      working-directory: etaka
+      run: npm install
+    - name: Build
+      working-directory: etaka
+      run: npm run build
+    - name: Run Tests
+      working-directory: etaka
+      run: npm test
