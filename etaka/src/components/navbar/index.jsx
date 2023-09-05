@@ -1,39 +1,31 @@
 import React from "react";
 import { useState } from "react";
 import './style.css'
-
 export const Navbar = () => {
   const [selectedNav, setSelectedNav] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
-
   const handleNavClick = (navItem) => {
     setSelectedNav(navItem);
-    setMenuOpen(false); 
+    setMenuOpen(false);
   };
-
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); 
+    setMenuOpen(!menuOpen);
   };
-
-  // Function to close the menu when a link is clicked (for small screens)
   const closeMenu = () => {
     if (window.innerWidth <= 768) {
       setMenuOpen(false);
     }
   };
-
   return (
     <div>
       <div className="nav-bar-container">
-        <img src="images/logo.png" alt="Logo"></img>
-
+        <img className="logoImage" src="images/logo.png" alt="Logo"></img>
         {/* Hamburger menu button */}
         <div className="hamburger-menu" onClick={toggleMenu}>
           <div className={`bar ${menuOpen ? 'open' : ''}`} />
           <div className={`bar ${menuOpen ? 'open' : ''}`} />
           <div className={`bar ${menuOpen ? 'open' : ''}`} />
         </div>
-
         {/* Navigation links */}
         <div className={`nav ${menuOpen ? 'open' : ''}`}>
           <a href="/home" className={`nav-link ${selectedNav === null ? 'active' : ''}`} onClick={() => {handleNavClick(null); closeMenu();}}>
