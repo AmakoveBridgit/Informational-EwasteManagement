@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.section-container{
+    margin-top: 5%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.title {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color:  #FF9800;
+}
+.values-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 60%;
+    margin-top: 10%;
+}
+@media (max-width: 768px) {
+    .centered-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}

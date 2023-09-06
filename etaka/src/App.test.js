@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { render} from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+it('displays the About component', () => {
+  const { getByText } = render(<App />);
+  const aboutHeading = getByText('About Us', { exact: false }); // Use { exact: false } for partial text matching
+  expect(aboutHeading).toBeInTheDocument();
 });
+
+
