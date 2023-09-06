@@ -45,3 +45,4 @@ describe('VCutout Component', () => {
     expect(image).not.toBeInTheDocument();
   });
 });
+

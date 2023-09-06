@@ -10,7 +10,7 @@ export const About = () => {
           <div className="section-container">
             <div className="header">
                 <h1 className="title">About Us</h1>
-                <h2>Vision</h2>
+                <h2 className="vision">Vision</h2>
                 <p>To empower responsible e-waste disposal in Kenya.</p>
             </div>
       <div className="header">
