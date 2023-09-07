@@ -10,6 +10,14 @@
 .section-container{
     margin-top: 5%;
 }
+.service-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding:  0 10%;
+}
 .header {
     display: flex;
     justify-content: center;
@@ -23,30 +31,33 @@
     font-weight: bold;
     color:  #FF9800;
 }
-.vision{
-    margin-top: 10%;
+.mini-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    max-width: 600px;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
 }
-.values-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10%;
-    margin-bottom: 60%;
-    margin-top: 10%;
+.service-text{
+    text-align: center;
+    max-width: 600px;
+    font-size: 26px;
 }
+.phone-image {
+    max-width: 800px;
+}
+
+
 @media (max-width: 768px) {
     .centered-section {
         display: flex;
+        margin-right: 50%;
+        
         justify-content: center;
         align-items: center;
         height: 100vh;
         padding: 20px;
         box-sizing: border-box;
     }
-
-    .title{
-        margin-bottom:-10%;
-    }
-    
 }
